@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 
-*{
+  @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Goudy+Bookletter+1911&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,13 +37,18 @@ body {
 .container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    
 }
 
 .header a {
     text-decoration: none;
     color: #404040;
+}
+
+.logo {
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .navbar {
@@ -52,7 +58,7 @@ body {
     justify-content: space-around;
     list-style: none;
     color: #404040;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -63,27 +69,33 @@ body {
     color: #404040;
 }
 
-.titulo{
-    font-size:20px;
+.titulo {
+    font-size: 30px;
 }
 
-
-.fundo{
-    background-image: url(../assets/imgs/fundo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 86.2vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
 
 .container {
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Beau Rivage';
     color: #ffff;
-    font-size:60px;
+    font-size: 60px;
+}
+
+.fundo .container p{
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 20px;
+}
+
+.fundo {
+    background-image: url(../assets/imgs/fundo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 94.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: brightness(50%);
 }
