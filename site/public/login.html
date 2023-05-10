@@ -12,7 +12,6 @@
 
     <link rel="icon" href="./assets/icon/favicon2.ico">
     <link rel="stylesheet" href="./css/login.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -45,23 +44,19 @@
                 <span id="mensagem_erro"></span>
             </div>
         </div>
-        <div class="container">
+        <div class="conteudo">
             <div class="card card-login">
-                <h2>Olá de volta!</h2>
+                <p>Bem-vindo de volta!</p>
                 <div class="formulario">
                     <div class="campo">
-                        <p>E-mail:</p>
-                        <input id="email_input" type="text" placeholder="Login">
+                        <p>E-mail</p>
+                        <input id="email_input" type="text" placeholder="E-mail">
                     </div>
                     <div class="campo">
-                        <p>Senha:</p>
+                        <p>Senha</p>
                         <input id="senha_input" type="text" placeholder="******">
                     </div>
                     <button class="botao" onclick="entrar()">Entrar</button>
-                </div>
-
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
                 </div>
 
                 <div id="div_erros_login"></div>

@@ -60,7 +60,6 @@ body {
     font-size: 30px;
 }
 
-
 .header .container {
     justify-content: flex-end;
     align-items: center;
@@ -72,7 +71,6 @@ body {
     font-size: 30px;
 }
 
-
 .container {
     display: flex;
     justify-content: center;
@@ -82,9 +80,20 @@ body {
     font-size: 60px;
 }
 
-.fundo .container p{
+.fundo .container p {
     font-family: 'Goudy Bookletter 1911';
     font-size: 20px;
+}
+
+.conteudo {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Beau Rivage';
+    color: #ffff;
+    font-size: 80px;
+    margin-left: 20%;
 }
 
 .fundo {
@@ -100,25 +109,46 @@ body {
 }
 
 .card {
-    width: 30%;
+    width: 200%;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    row-gap: 20px;
+}
+
+.formulario {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    color: #ffffff;
-    row-gap: 20px;
-  }
-  
-  .card-cadastro {
-    height: 80%;
-  }
-  
-  .card-login {
-    height: 60%;
-  }
-  
-  .card h2 {
+}
+
+.card-login {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(1.2px);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.card p {
     margin: 0;
-    font-size: 30px;
-  }
+    font-size:75px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}

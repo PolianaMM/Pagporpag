@@ -80,6 +80,7 @@ body {
     font-family: 'Beau Rivage';
     color: #ffff;
     font-size: 60px;
+    position: absolute;
 }
 
 .fundo .container p{
@@ -102,17 +103,28 @@ body {
 .card {
     width: 30%;
     background-color: #937D77;
-    filter: blur(3px);
+    box-shadow: 0 0 20px 20px #937d77;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
     color: #ffffff;
   }
+
+  .texto{
+    color:#fff;
+    text-shadow: #fff;
+  }
   
   .card-cadastro {
     height: 30%;
     width: 60vh;
+  }
+
+  .campp input{
+    width: 5vw;
+    height: 7vh;
+    border: 5px solid #ff4500;
   }
   
   .card-login {

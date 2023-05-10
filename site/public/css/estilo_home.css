@@ -81,9 +81,21 @@ body {
     font-family: 'Beau Rivage';
     color: #ffff;
     font-size: 60px;
+    
 }
 
-.fundo .container p{
+.conteudo{
+    margin-left: 20%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Beau Rivage';
+    color: #ffff;
+    font-size: 60px;
+}
+
+.fundo .conteudo p{
     font-family: 'Goudy Bookletter 1911';
     font-size: 20px;
 }
