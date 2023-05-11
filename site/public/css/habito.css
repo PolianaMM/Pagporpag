@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Goudy+Bookletter+1911&display=swap');
 
 * {
     margin: 0;
@@ -22,9 +21,11 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
-    justify-content: flex-end;
-    display: flex;
     align-items: center;
+    justify-content: center;
+    font-family: 'Beau Rivage';
+    color: #ffff;
+    font-size: 60px;
 }
 
 .header .container {
@@ -36,11 +37,6 @@ body {
     border-bottom: 2px solid #635e5e;
 }
 
-
-.container {
-    
-}
-
 .header a {
     text-decoration: none;
     color: #404040;
@@ -50,14 +46,14 @@ body {
     padding-right: 0px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .navbar {
     width: 300px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     list-style: none;
     color: #404040;
     font-size: 30px;
@@ -73,17 +69,6 @@ body {
 
 .titulo {
     font-size: 30px;
-}
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Beau Rivage';
-    color: #ffff;
-    font-size: 60px;
-    
 }
 
 .conteudo{
@@ -113,3 +98,4 @@ body {
     justify-content: space-between;
    
 }
+
