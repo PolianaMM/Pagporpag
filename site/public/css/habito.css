@@ -71,18 +71,35 @@ body {
     font-size: 30px;
 }
 
-.conteudo{
-    margin-left: 20%;
+.conteudo {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Beau Rivage';
     color: #ffff;
-    font-size: 60px;
+    font-size: 30px;
+    margin: 5%;
 }
 
-.fundo .conteudo p{
+.texto {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.texto a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topico {
+    float: left;
+    width: 320px;
+    margin: 5px 5px 5px 5px;
+    padding: 0%;
+}
+
+.fundo .conteudo p {
     font-family: 'Goudy Bookletter 1911';
     font-size: 20px;
 }
@@ -96,6 +113,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-attachment:fixed;   
+    background-attachment: fixed;
 }
-

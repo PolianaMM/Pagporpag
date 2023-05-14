@@ -99,15 +99,19 @@ body {
     padding-right: 0%;
 }
 
-.imagem-prensa {
-    float: left;
+.imagem-cuneiforme p{
+    font-size: 10px;
+}
+
+.imagem-hieroglífica {
+    float: right;
     width: 320px;
     margin: 5px 5px 5px 5px;
     padding-right: 0%;
 }
 
-.imagem-hieroglífica {
-    float: right;
+.imagem-prensa{
+    float: left;
     width: 320px;
     margin: 5px 5px 5px 5px;
     padding-right: 0%;
