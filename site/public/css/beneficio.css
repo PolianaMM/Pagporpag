@@ -82,6 +82,23 @@ body {
     font-size: 60px;
 }
 
+.texto {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.texto a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topico {
+    float: left;
+    width: 320px;
+    margin: 5px 5px 5px 5px;
+    padding: 0%;
+}
+
 .fundo .conteudo p{
     font-family: 'Goudy Bookletter 1911';
     font-size: 20px;
