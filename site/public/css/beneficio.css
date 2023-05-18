@@ -13,6 +13,7 @@ body {
     padding: 0;
 }
 
+
 .fundo {
     background-image: url(../assets/imgs/fundohome.jpg);
     background-repeat: no-repeat;
@@ -55,7 +56,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-family: 'Beau Rivage';
-    color: #404040;
+    color: #e3d9d9;
 }
 
 .header-ul {
@@ -75,7 +76,7 @@ body {
     text-decoration: none;
     font-family: 'Beau Rivage';
     font-size: 25px;
-    color: #242222;
+    color: #e3d9d9;
 }
 
 .header-li:hover,
@@ -116,6 +117,11 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+.texto a:hover{
+    text-decoration: underline;
+}
+
 
 .topico {
     float: left;
