@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Goudy+Bookletter+1911&display=swap');
 
 * {
     margin: 0;
@@ -20,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(5px);
-    background-color: rgba(108, 87, 87, 0.5);
+    background-color: rgba(108, 87, 87, 0.7);
     position: fixed;
     top: 0;
     z-index: 1;
@@ -31,7 +30,7 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Beau Rivage';
     color: #ffff;
@@ -43,6 +42,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Beau Rivage';
+    color: #404040;
 }
 
 .header-ul {
@@ -62,29 +63,26 @@ body {
     text-decoration: none;
     font-family: 'Beau Rivage';
     font-size: 25px;
-    color: #252424;
+    color: #242222;
 }
 
-.header-li:hover, .seta:hover {
+.header-li:hover,
+.seta:hover {
     transition: all 0.3s ease-in-out;
     transform: scale(1.15);
 }
 
 .logo {
     padding-right: 0px;
+    margin-right: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.header .container {
-    justify-content: flex-end;
-    align-items: center;
-    font-family: 'Beau Rivage';
-    color: #404040;
-}
 
-.conteudo{
+
+.conteudo {
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -94,7 +92,7 @@ body {
     font-size: 60px;
 }
 
-.fundo .conteudo p{
+.fundo .conteudo p {
     font-family: 'Goudy Bookletter 1911';
     font-size: 20px;
 }
@@ -108,5 +106,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }

@@ -13,62 +13,83 @@ body {
     padding: 0;
 }
 
+.fundo {
+    background-image: url(../assets/imgs/fundohome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-attachment: fixed;
+}
+
 .header {
-    border-bottom: 2px #404040 solid;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(108, 87, 87, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin: 0 auto;
 }
 
 .container {
     width: 80%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     font-family: 'Beau Rivage';
     color: #ffff;
     font-size: 60px;
 }
 
 .header .container {
-    justify-content: flex-end;
-}
-
-.header {
-    height: 20%;
-    border-bottom: 2px solid #635e5e;
-}
-
-.header a {
-    text-decoration: none;
-    color: #404040;
-}
-
-.logo {
-    padding-right: 0px;
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-}
-
-.navbar {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style: none;
-    color: #404040;
-    font-size: 30px;
-}
-
-
-.header .container {
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
     font-family: 'Beau Rivage';
     color: #404040;
 }
 
-.titulo {
-    font-size: 30px;
+.header-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.header-li {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.header-a {
+    text-decoration: none;
+    font-family: 'Beau Rivage';
+    font-size: 25px;
+    color: #242222;
+}
+
+.header-li:hover,
+.seta:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.15);
+}
+
+.logo {
+    padding-right: 0px;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .conteudo {
@@ -78,13 +99,13 @@ body {
     align-items: center;
     font-family: 'Beau Rivage';
     color: #ffff;
-    font-size: 30px;
-    margin: 5%;
+    font-size: 40px;
 }
 
 .texto {
     text-align: justify;
     text-indent: 30px;
+    margin:2%;
 }
 
 .texto a {
@@ -99,19 +120,11 @@ body {
     padding: 0%;
 }
 
+.fundo .conteudo h2{
+    margin-top: 5%;
+} 
+
 .fundo .conteudo p {
     font-family: 'Goudy Bookletter 1911';
     font-size: 20px;
-}
-
-.fundo {
-    background-image: url(../assets/imgs/fundohome.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-attachment: fixed;
 }
