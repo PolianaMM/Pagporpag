@@ -115,6 +115,7 @@ body {
 .texto {
     text-align: justify;
     text-indent: 30px;
+    width: 65%;
 }
 
 .texto a {
