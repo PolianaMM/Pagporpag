@@ -116,6 +116,7 @@ body {
     text-align: justify;
     text-indent: 30px;
     width: 65%;
+    backdrop-filter: blur(25px);
 }
 
 .texto a {

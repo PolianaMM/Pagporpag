@@ -112,6 +112,7 @@ body {
     text-indent: 30px;
     margin:2%;
     width: 65%;
+    backdrop-filter: blur(25px);
 }
 
 .texto a {
@@ -122,7 +123,6 @@ body {
 .texto a:hover{
     text-decoration: underline;
 }
-
 
 .topico {
     float: left;

@@ -80,8 +80,6 @@ body {
     justify-content: flex-start;
 }
 
-
-
 .conteudo {
     flex-direction: column;
     display: flex;

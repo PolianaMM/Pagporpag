@@ -109,8 +109,9 @@ body {
 .texto {
     text-align: justify;
     text-indent: 30px;
-    margin:2%;
+    margin-left: 22%;
     width: 65%;
+    backdrop-filter: blur(25px);
 }
 
 .texto a {
