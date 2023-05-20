@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="../assets/icon/favicon2.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas metas | PáginaporPágina</title>
+
+    <link rel="stylesheet" href="./dashboard.css">
+    <script src="../js/funcoes.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
+    <!-- <body onload="validarSessao()"> -->
+
+    <div class="conteudo">
+        <div class="header">
+            <div class="container">
+                <ul class="header-usuario">
+                    <a class="header-a" href="./index.html" height="49px" ; width="49px" ;>
+                        <img class="logo" src="./assets/icon/logo_fundo.png" alt="logo" width="45px">
+                    </a>
+                    <li class="header-li-bemvindo">
+                        <a class="header-a">
+                            Bom te ver de novo, <span id="b_usuario">usuário</span>!
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="header-ul">
+                    <li class="header-li">
+                        <a class="header-a" href="./dashboard.html">
+                            Não estou sozinha
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a class="header-a" href="./mural.html">
+                            Metas Atingidas
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a class="header-a" href="./dashboard/cards.html">
+                            Livros Lidos
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <div class="btn-logout" onclick="limparSessao()">
+                            Sair
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fundo">
+        <div class="metas">
+            <div class="conteudo">
+                <div class="card card-rotina">
+
+
+                    <h1>Minhas Metas</h1>
+                    <div class="formulario">
+                        <div class="campo">
+                            
+                        </div>
+                        <div class="div-results">
+                            <div id="feed_container" class="feed-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>

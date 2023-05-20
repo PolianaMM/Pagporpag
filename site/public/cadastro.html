@@ -32,7 +32,7 @@
                     </a>
                 </ul>
                 <ul class="header-ul">
-    
+
                     <li class="header-li">
                         <a class="header-a" href="./historia.html">
                             História
@@ -86,40 +86,37 @@
                     <div class="texto">
                         <h6>Me fala um pouco mais sobre você...</h6>
                     </div>
-                    <div class="formulario">
 
-                        <!--
+                    <!--
                          Para inserir mais um campo, copie uma das inputs abaixo.
                          Assim que inserir vá para o script abaixo.
                      -->
 
-                        <div class="campo">
-                            <p>Nome:</p>
-                            <input id="nome_input" type="text" placeholder="Nome">
-                        </div>
-                        <div class="campo">
-                            <p>Idade:</p>
-                            <input id="idade_input" type="text" placeholder="Idade">
-                        </div>
-                        <div class="campo">
-                            <p>E-mail:</p>
-                            <input id="email_input" type="text" placeholder="E-mail">
-                        </div>
-                        <div class="campo">
-                            <p>Senha:</p>
-                            <input id="senha_input" type="password" placeholder="******">
-                        </div>
-                        <div class="campo">
-                            <p>Você tem o hábito de ler?</p>
-                            <select id="ler">
-                                <option value="1">Escolha uma oção</option>
-                                <option value="2">Sim, já leio e amo!</option>
-                                <option value="3">Não, mas não vejo a hora de começar!</option>
-                            </select>
-                        </div>
-                            <button class="botao" onclick="cadastrar()">Cadastrar</button>
-
+                    <div class="campo">
+                        <p>Nome:</p>
+                        <input id="nome_input" type="text" placeholder="Nome">
                     </div>
+                    <div class="campo">
+                        <p>Idade:</p>
+                        <input id="idade_input" type="text" placeholder="Idade">
+                    </div>
+                    <div class="campo">
+                        <p>E-mail:</p>
+                        <input id="email_input" type="text" placeholder="E-mail">
+                    </div>
+                    <div class="campo">
+                        <p>Senha:</p>
+                        <input id="senha_input" type="password" placeholder="******">
+                    </div>
+                    <div class="campo">
+                        <p>Você tem o hábito de ler?</p>
+                        <select id="ler">
+                            <option value="1">Escolha uma oção</option>
+                            <option value="2">Sim, já leio e amo!</option>
+                            <option value="3">Não, mas não vejo a hora de começar!</option>
+                        </select>
+                    </div>
+                    <button class="botao" onclick="cadastrar()">Cadastrar</button>
                     <div id="div_erros_login"></div>
                 </div>
             </div>
@@ -150,7 +147,7 @@
         var senhaVar = senha_input.value;
         var lerVar = ler.value;
 
-        if (nomeVar == "" || emailVar == "" || idadeVar == "" ||senhaVar == "" || ler == "") {
+        if (nomeVar == "" || emailVar == "" || idadeVar == "" || senhaVar == "" || ler == "") {
             alert(`Preencha todos os campos`)
             // cardErro.style.display = "block"
             // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
@@ -186,8 +183,8 @@
 
                 mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
  */                setTimeout(() => {
-                    window.location = "login.html";
-                }, "2000")
+                window.location = "login.html";
+            }, "2000")
 
                 limparFormulario();
                 //finalizarAguardar();

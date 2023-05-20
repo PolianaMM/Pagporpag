@@ -31,15 +31,15 @@
         <div class="header">
             <div class="container">
                 <ul class="header-usuario">
-                    <a class="header-a" href="./index.html"  height="49px"; width="49px";>
+                    <a class="header-a" href="./index.html" height="49px" ; width="49px" ;>
                         <img class="logo" src="./assets/icon/logo_fundo.png" alt="logo" width="45px">
                     </a>
-                    <li class="header-li">
+                    <li class="header-li-bemvindo">
                         <a class="header-a">
                             Bom te ver de novo, <span id="b_usuario">usuário</span>!
                         </a>
                     </li>
-                   
+
                 </ul>
                 <ul class="header-ul">
                     <li class="header-li">
@@ -57,9 +57,11 @@
                             Livros Lidos
                         </a>
                     </li>
-                    <div class="btn-logout" onclick="limparSessao()">
-                        Sair
-                    </div>
+                    <li class="header-li">
+                        <div class="btn-logout" onclick="limparSessao()">
+                            Sair
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -68,7 +70,7 @@
         <div class="dash">
             <div class="btns-dash">
                 <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
-                <button class="btn-chart btn-gray" onclick="exibirAquario(1)" id="btnAquario1">Qauntidade de
+                <button class="btn-chart btn-gray" onclick="exibirAquario(1)" id="btnAquario1">Quantidade de
                     Leitores</button>
                 <button class="btn-chart btn-white" onclick="exibirAquario(2)" id="btnAquario2">Idade dos
                     Leitores</button>
@@ -142,7 +144,7 @@
 
     function alterarTitulo(idAquario) {
         var tituloAquario = document.getElementById(`tituloAquario${idAquario}`)
-        tituloAquario.innerHTML = "Últimas medidas de Temperatura e Umidade do <span style='color: #e6005a'>Aquário " + idAquario + "</span>"
+        tituloAquario.innerHTML = "Últimas informações <span style='color: #e6005a'>Aquário " + idAquario + "</span>"
     }
 
     function exibirAquario(idAquario) {

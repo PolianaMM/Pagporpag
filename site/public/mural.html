@@ -20,82 +20,77 @@
 <body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
     <!-- <body onload="validarSessao()"> -->
 
-    <div class="janela">
-
-
-        <div class="conteudo">
-            <div class="header">
-                <div class="container">
-                    <ul class="header-usuario">
-                        <a class="header-a" href="./index.html"  height="49px"; width="49px";>
-                            <img class="logo" src="./assets/icon/logo_fundo.png" alt="logo" width="45px">
+    <div class="conteudo">
+        <div class="header">
+            <div class="container">
+                <ul class="header-usuario">
+                    <a class="header-a" href="./index.html" height="49px" ; width="49px" ;>
+                        <img class="logo" src="./assets/icon/logo_fundo.png" alt="logo" width="45px">
+                    </a>
+                    <li class="header-li-bemvindo">
+                        <a class="header-a">
+                            Bom te ver de novo, <span id="b_usuario">usuário</span>!
                         </a>
-                        <li class="header-li">
-                            <a class="header-a">
-                                Bom te ver de novo, <span id="b_usuario">usuário</span>!
-                            </a>
-                        </li>
-                       
-                    </ul>
-                    <ul class="header-ul">
-                        <li class="header-li">
-                            <a class="header-a" href="./dashboard.html">
-                                Não estou sozinha
-                            </a>
-                        </li>
-                        <li class="header-li">
-                            <a class="header-a" href="./mural.html">
-                                Metas Atingidas
-                            </a>
-                        </li>
-                        <li class="header-li">
-                            <a class="header-a" href="./dashboard/cards.html">
-                                Livros Lidos
-                            </a>
-                        </li>
+                    </li>
+
+                </ul>
+                <ul class="header-ul">
+                    <li class="header-li">
+                        <a class="header-a" href="./dashboard.html">
+                            Não estou sozinha
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a class="header-a" href="./mural.html">
+                            Metas Atingidas
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a class="header-a" href="./dashboard/cards.html">
+                            Livros Lidos
+                        </a>
+                    </li>
+                    <li class="header-li">
                         <div class="btn-logout" onclick="limparSessao()">
                             Sair
                         </div>
-                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="fundo">
+        <div class="metas">
+            <div class="conteudo">
+                <div class="card card-rotina">
+
+
+                    <h1>Qual será sua nova meta?</h1>
+                    <div class="formulario">
+                        <div class="campo">
+                            <form id="form_postagem" method="post" onsubmit="return publicar()">
+                                <label>
+                                    (máximo de 100 caracteres):
+                                    <br>
+                                    <textarea name="descricao" id="textarea_descricao" maxlength="100"
+                                        rows="5"></textarea>
+                                </label>
+                                <br>
+                                <button class="botao">Inserir nova meta</button>
+                            </form>
+                        </div>
+                        <div class="div-results">
+                            <div id="feed_container" class="feed-container">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="fundo">
-
-            <div class="avisos">
-                <div class="container">
-                    <h1>Publicar um aviso</h1>
-                    <div class="div-form">
-                        <form id="form_postagem" method="post" onsubmit="return publicar()">
-                            <label>
-                                Título:
-                                <br>
-                                <input name="titulo" id="titulo" maxlength="100" type="text">
-                            </label>
-                            <br>
-                            <label>
-                                Descrição (máximo de 250 caracteres):
-                                <br>
-                                <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
-                            </label>
-                            <br>
-                            <button>Enviar</button>
-                        </form>
-                    </div>
-                    <h1>Mural de Avisos</h1>
-                    <div class="div-results">
-                        <div id="feed_container" class="feed-container">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!-- MODAL -->
-            <!-- <div id="div_modal" class="div-modal">
+        <!-- MODAL -->
+        <!-- <div id="div_modal" class="div-modal">
                 <div id="modal_backdrop" onclick="fecharModal()" class="modal-backdrop">
                 </div>
                 <div id="modal_container" class="modal-container">
@@ -103,23 +98,19 @@
                 </div>
             </div> -->
 
-            <!-- AGUARDAR -->
-            <!-- <div id="div_aguardar" class="div-aguardar">
+        <!-- AGUARDAR -->
+        <!-- <div id="div_aguardar" class="div-aguardar">
                 <img src="./assets/aguarde-pink3.gif" id="img_aguarde">
             </div>  -->
 
-        </div>
     </div>
 
-
-
-
-</body>
+c
 
 </html>
 
 <script>
-    
+
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     function limparFormulario() {
@@ -130,7 +121,6 @@
         var idUsuario = sessionStorage.ID_USUARIO;
 
         var corpo = {
-            titulo: form_postagem.titulo.value,
             descricao: form_postagem.descricao.value
         }
 

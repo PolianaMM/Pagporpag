@@ -75,6 +75,12 @@ body {
     margin: 5px;
 }
 
+.header-li-bemvindo {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
 .header-a {
     text-decoration: none;
     font-family: 'Beau Rivage';
@@ -90,7 +96,6 @@ body {
 
 .logo {
     padding-right: 0px;
-    
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -103,64 +108,126 @@ body {
     align-items: center;
     font-family: 'Beau Rivage';
     color: #ffff;
-    font-size: 40px;
+    font-size: 25px;
 }
 
-.texto {
-    text-align: justify;
-    text-indent: 30px;
-    margin:2%;
-    width: 65%;
-    backdrop-filter: blur(25px);
+.card {
+    width: 200%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    row-gap: 20px;
 }
 
-.texto a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.topico {
-    float: left;
-    width: 320px;
-    margin: 5px 5px 5px 5px;
-    padding: 0%;
-}
-
-.fundo .conteudo h2{
-    margin-top: 5%;
-} 
-
-.fundo .conteudo p {
+.formulario {
     font-family: 'Goudy Bookletter 1911';
-    font-size: 20px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-.btn-chart {
-    font-family: "Exo 2", sans-serif;
+.card-rotina {
+    width: 130%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(7.6px);
+}
+
+.card-meta {
+    width: 130%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(7.6px);
+}
+
+.card p {
+    margin: 0;
+    font-size:50px;
+    justify-content: center;
+    display: flex;
+}
+
+.metas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.campo input {
+    width: 100%;
+    height: 25px;
+    border: 2px #5a4e4e solid;
+    border-radius: 8px;
+    padding: 0px 10px;
+    background-color: rgba(90, 86, 86, 0.34);
+    color: #ffffff;
+}
+
+.botao {
+    margin:20px;
+    cursor: pointer;
+    font-family: 'Goudy Bookletter 1911', sans-serif;
     border: 0;
-    font-weight: 600;
+    border-radius: 5px;
     font-size: 18px;
-    padding: 10px 15px;
-    color: rgba(185, 180, 180);
-    background-color: white;
-    margin: 5px;
-    border-radius: 3px;
+    color: #fff;
+    background-color: #544f4c;
+    width: 130px;
+    height: 35px;
+    align-self: center;
+  }
+
+  .dash {
+    width: 80%;
+    position: relative;
+    left: 20%;
+    height: 100vh;
+    overflow: auto;
   }
 
   .btns-dash {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 545px;
+    margin-top: 100px;
+    margin-right: 345px;
   }
-
+  
+  .btn-chart {
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+    border: 0;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #544f4c;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+  }
+  
   .btn-gray {
     color: white;
-    background-color: rgba(185, 180, 180);
+    background-color: #544f4c;
   }
   
   .btn-white {
-    color:rgba(185, 180, 180);
+    color: #544f4c;
     background-color: white;
   
   }
