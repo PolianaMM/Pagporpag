@@ -6,10 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTech | Tempo Real</title>
+    <title>Meu lugar | PáginaporPágina</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="dashboards.css">
+    <link rel="stylesheet" href="./dashboard.css">
 
     <script src="../js/funcoes.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,37 +22,45 @@
     <div class="janela">
 
 
-        <div class="header-left dash-header">
-
-            <h1>AquaTech</h1>
-
-            <div class="hello">
-                <h3>Bom te ver de novo, <span id="b_usuario">usuário</span>!</h3>
+        <div class="conteudo">
+            <div class="header">
+                <div class="container">
+                    <ul class="header-usuario">
+                        <a class="header-a" href="./index.html"  height="49px"; width="49px";>
+                            <img class="logo" src="./assets/icon/logo_fundo.png" alt="logo" width="45px">
+                        </a>
+                        <li class="header-li">
+                            <a class="header-a">
+                                Bom te ver de novo, <span id="b_usuario">usuário</span>!
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-a" href="./dashboard.html">
+                                Não estou sozinha
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-a" href="./mural.html">
+                                Metas Atingidas
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-a" href="./dashboard/cards.html">
+                                Livros Lidos
+                            </a>
+                        </li>
+                        <div class="btn-logout" onclick="limparSessao()">
+                            Sair
+                        </div>
+                    </ul>
+                </div>
             </div>
-
-            <div class="btn-nav">
-                <h3>Aquários</h3>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./dashboard.html">
-                    <h3>Gráficos</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./mural.html">
-                    <h3>Mural de Avisos</h3>
-                </a>
-            </div>
-
-            <div class="btn-logout" onclick="limparSessao()">
-                <h3>Sair</h3>
-            </div>
-
         </div>
 
-        <div class="dash">
+        <div class="fundo">
             <div class="regua">
                 <div class="item-regua perigo-frio">
                     <h4>Perigo</h4>

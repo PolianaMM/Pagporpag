@@ -13,10 +13,10 @@ USE pagina;
 CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
-    idade INT,
+    idade DATE,
 	email VARCHAR(50),
 	senha VARCHAR(50),
-    confirmacao_senha VARCHAR(50)
+    ler VARCHAR (50)
 );
 
 CREATE TABLE aviso (
@@ -46,7 +46,6 @@ create table medida (
 	fk_aquario INT,
 	FOREIGN KEY (fk_aquario) REFERENCES aquario(id)
 );
-
 
 /*
 comando para sql server - banco remoto - ambiente de produção

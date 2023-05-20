@@ -110,8 +110,12 @@
                             <input id="senha_input" type="password" placeholder="******">
                         </div>
                         <div class="campo">
-                            <p>Confirmação da Senha:</p>
-                            <input id="confirmacao_senha_input" type="password" placeholder="******">
+                            <p>Você tem o hábito de ler?</p>
+                            <select id="ler">
+                                <option value="1">Escolha uma oção</option>
+                                <option value="2">Sim, já leio e amo!</option>
+                                <option value="3">Não, mas não vejo a hora de começar!</option>
+                            </select>
                         </div>
                             <button class="botao" onclick="cadastrar()">Cadastrar</button>
 
@@ -144,9 +148,9 @@
         var emailVar = email_input.value;
         var idadeVar = idade_input.value;
         var senhaVar = senha_input.value;
-        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var lerVar = ler.value;
 
-        if (nomeVar == "" || emailVar == "" || idadeVar == "" ||senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || idadeVar == "" ||senhaVar == "" || ler == "") {
             alert(`Preencha todos os campos`)
             // cardErro.style.display = "block"
             // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
@@ -171,6 +175,7 @@
                 idadeServer: idadeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
+                lerServer: lerVar
             })
         }).then(function (resposta) {
 

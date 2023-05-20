@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTech | Dashboards</title>
+    <link rel="shortcut icon" href="./assets/icon/logo_fundo.png" type="image/x-icon">
+    <title>Clube do livro | PáginaporPágina</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="dashboards.css">
+    <link rel="stylesheet" href="./dashboard.css">
     <script src="../js/funcoes.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,53 +24,59 @@
     <script src="https://kit.fontawesome.com/9f7414eb10.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload=" atualizarFeed()">
+<body>
 
-    <div class="janela">z
-        <div class="header-left">
-            <h1>AquaTech</h1>
-
-            <div class="hello">
-                <h3>Bom te ver de novo, <span id="b_usuario">usuário</span>!</h3>
+    <!--header inicio-->
+    <div class="conteudo">
+        <div class="header">
+            <div class="container">
+                <ul class="header-usuario">
+                    <a class="header-a" href="./index.html"  height="49px"; width="49px";>
+                        <img class="logo" src="./assets/icon/logo_fundo.png" alt="logo" width="45px">
+                    </a>
+                    <li class="header-li">
+                        <a class="header-a">
+                            Bom te ver de novo, <span id="b_usuario">usuário</span>!
+                        </a>
+                    </li>
+                   
+                </ul>
+                <ul class="header-ul">
+                    <li class="header-li">
+                        <a class="header-a" href="./dashboard.html">
+                            Não estou sozinha
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a class="header-a" href="./mural.html">
+                            Metas Atingidas
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a class="header-a" href="./dashboard/cards.html">
+                            Livros Lidos
+                        </a>
+                    </li>
+                    <div class="btn-logout" onclick="limparSessao()">
+                        Sair
+                    </div>
+                </ul>
             </div>
-
-            <div class="btn-nav-white">
-                <a href="./cards.html">
-                    <h3>Aquários</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav">
-
-                <h3>Gráficos</h3>
-
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./mural.html">
-                    <h3>Mural de Avisos</h3>
-                </a>
-            </div>
-
-            <div class="btn-logout" onclick="limparSessao()">
-                <h3>Sair</h3>
-            </div>
-
         </div>
-
+    </div>
+    <div class="fundo">
         <div class="dash">
             <div class="btns-dash">
                 <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
-                <button class="btn-chart btn-pink" onclick="exibirAquario(1)" id="btnAquario1">Aquario 1</button>
-                <button class="btn-chart btn-white" onclick="exibirAquario(2)" id="btnAquario2">Aquario 2</button>
-                <button class="btn-chart btn-white" onclick="exibirAquario(3)" id="btnAquario3">Aquario 3</button>
-                <button class="btn-chart btn-white" onclick="exibirAquario(4)" id="btnAquario4">Aquario 4</button>
+                <button class="btn-chart btn-gray" onclick="exibirAquario(1)" id="btnAquario1">Qauntidade de
+                    Leitores</button>
+                <button class="btn-chart btn-white" onclick="exibirAquario(2)" id="btnAquario2">Idade dos
+                    Leitores</button>
+                <!-- <button class="btn-chart btn-white" onclick="exibirAquario(3)" id="btnAquario3">Aquario 3</button>
+                <button class="btn-chart btn-white" onclick="exibirAquario(4)" id="btnAquario4">Aquario 4</button> -->
             </div>
             <div id="graficos">
                 <div id="grafico1" class="display-block">
-                    <h3 class="tituloGraficos">
-                        <span id="tituloAquario1">123</span>
-                    </h3>
                     <div class="graph">
                         <canvas id="myChartCanvas1"></canvas>
                     </div>
@@ -91,7 +97,7 @@
                     </div>
                 </div>
 
-                <div id="grafico3" class="display-none">
+                <!-- <div id="grafico3" class="display-none">
                     <h3 class="tituloGraficos">
                         <span id="tituloAquario3"></span>
                     </h3>
@@ -113,16 +119,11 @@
                     <div class="label-captura">
                         <p id="avisoCaptura4" style="color: white"></p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-
-
 </body>
-
-</html>
-
 <script>
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
@@ -133,8 +134,8 @@
     function obterDadosGraficos() {
         obterDadosGrafico(1)
         obterDadosGrafico(2)
-        obterDadosGrafico(3)
-        obterDadosGrafico(4)
+        // obterDadosGrafico(3)
+        // obterDadosGrafico(4)
     }
 
     verificar_autenticacao();
@@ -154,24 +155,24 @@
                 elementoAtual.classList.remove("display-block")
             }
             elementoAtual.classList.add("display-none")
-            
+
             // alterando estilo do botão
             let btnAtual = document.getElementById(`btnAquario${i}`)
-            if (btnAtual.classList.contains("btn-pink")) {
-                btnAtual.classList.remove("btn-pink")
+            if (btnAtual.classList.contains("btn-gray")) {
+                btnAtual.classList.remove("btn-gray")
             }
             btnAtual.classList.add("btn-white")
         }
-        
+
         // exibindo - ou não - o gráfico
         let graficoExibir = document.getElementById(`grafico${idAquario}`)
         graficoExibir.classList.remove("display-none")
         graficoExibir.classList.add("display-block")
-        
+
         // alterando estilo do botão
         let btnExibir = document.getElementById(`btnAquario${idAquario}`)
         btnExibir.classList.remove("btn-white")
-        btnExibir.classList.add("btn-pink")
+        btnExibir.classList.add("btn-gray")
     }
 
     // O gráfico é construído com três funções:
@@ -224,14 +225,14 @@
         let dados = {
             labels: labels,
             datasets: [{
-                label: 'Umidade',
+                label: 'Já leio',
                 data: [],
                 fill: false,
                 borderColor: 'rgb(75, 192, 192)',
                 tension: 0.1
             },
             {
-                label: 'Temperatura',
+                label: 'Ainda não comecei',
                 data: [],
                 fill: false,
                 borderColor: 'rgb(199, 52, 52)',
