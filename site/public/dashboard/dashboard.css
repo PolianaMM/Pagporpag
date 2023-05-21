@@ -13,7 +13,7 @@ body {
 }
 
 .fundo {
-    background-image: url(./assets/imgs/dash.jpg);
+    background-image: url(../assets/imgs/dash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -230,4 +230,12 @@ body {
     color: #544f4c;
     background-color: white;
   
+  }
+
+  .graph {
+    display: block; 
+    box-sizing: border-box; 
+    height: 406px; 
+    width: 812px; 
+    margin-top:80px;
   }

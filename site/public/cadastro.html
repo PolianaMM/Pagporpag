@@ -111,9 +111,8 @@
                     <div class="campo">
                         <p>Você tem o hábito de ler?</p>
                         <select id="ler">
-                            <option value="1">Escolha uma oção</option>
-                            <option value="2">Sim, já leio e amo!</option>
-                            <option value="3">Não, mas não vejo a hora de começar!</option>
+                            <option value="1">Sim, já leio e amo!</option>
+                            <option value="2">Não, mas não vejo a hora de começar!</option>
                         </select>
                     </div>
                     <button class="botao" onclick="cadastrar()">Cadastrar</button>
@@ -147,7 +146,7 @@
         var senhaVar = senha_input.value;
         var lerVar = ler.value;
 
-        if (nomeVar == "" || emailVar == "" || idadeVar == "" || senhaVar == "" || ler == "") {
+        if (nomeVar == "" || emailVar == "" || idadeVar == "" || senhaVar == "" || lerVar == "") {
             alert(`Preencha todos os campos`)
             // cardErro.style.display = "block"
             // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
