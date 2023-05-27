@@ -120,8 +120,7 @@
         var senhaVar = senha_input.value;
 
         if (emailVar == "" || senhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            alert ("Campos em branco. Por favor preencha todos os campos");
             // finalizarAguardar();
             return false;
         }
