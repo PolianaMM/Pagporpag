@@ -10,9 +10,9 @@ CREATE DATABASE pagina;
 
 USE pagina;
 
-CREATE TABLE leitura (
-	idleitura INT PRIMARY KEY,
-    ler VARCHAR (50)
+CREATE TABLE ler (
+	idler INT PRIMARY KEY,
+    leitura VARCHAR (50)
     );
 
 CREATE TABLE usuario (
@@ -22,12 +22,12 @@ CREATE TABLE usuario (
 	email VARCHAR(50),
 	senha VARCHAR(50),
     fkLer INT,
-   foreign key (fkLer) references leitura(idleitura)
+   foreign key (fkLer) references ler(idler)
 );
 
 select*from usuario;
 
-INSERT INTO leitura VALUES 
+INSERT INTO ler VALUES 
 (1, 'Sim, já leio e amo!'),
 (2, 'Não, mas não vejo a hora de começar!');
 
