@@ -10,18 +10,29 @@ CREATE DATABASE pagina;
 
 USE pagina;
 
+CREATE TABLE leitura (
+	idleitura INT PRIMARY KEY,
+    ler VARCHAR (50)
+    );
+
 CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
-    idade DATE,
+    idade INT,
 	email VARCHAR(50),
 	senha VARCHAR(50),
-    ler VARCHAR (50)
+    fkLer INT,
+   foreign key (fkLer) references leitura(idleitura)
 );
+
+select*from usuario;
+
+INSERT INTO leitura VALUES 
+(1, 'Sim, já leio e amo!'),
+(2, 'Não, mas não vejo a hora de começar!');
 
 CREATE TABLE aviso (
 	id INT PRIMARY KEY AUTO_INCREMENT,
-	titulo VARCHAR(100),
 	descricao VARCHAR(150),
 	fk_usuario INT,
 	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
