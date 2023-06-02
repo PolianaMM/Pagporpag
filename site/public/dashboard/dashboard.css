@@ -239,3 +239,27 @@ body {
     width: 812px; 
     margin-top:80px;
   }
+
+  .feed-container{
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+    font-size: 18px;
+  }
+
+  .publicacao{
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+    font-size: 18px;
+  }
+
+  .div-buttons{
+    margin:20px;
+    cursor: pointer;
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #544f4c;
+    width: 130px;
+    height: 35px;
+    align-self: center;
+  }
