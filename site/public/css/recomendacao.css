@@ -89,11 +89,16 @@ body {
     justify-content: flex-start;
 }
 
-.titulo {
-    font-size: 30px;
+.conteudo {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Beau Rivage';
+    font-size: 40px;
 }
 
-.conteudo {
+.alinhamento{
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -103,33 +108,31 @@ body {
     font-size: 40px;
 }
 
-.texto {
-    text-align: justify;
-    text-indent: 30px;
-    width: 65%;
-    backdrop-filter: blur(25px);
-    margin-left: 24%;
+.alinhamento h2{
+    margin-top: 7%;
+    margin-left: 600px;
 }
 
-.texto a {
-    text-decoration: none;
-    color: inherit;
-}
+.carousel {
+    display:flex;
+    width: 400px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Beau Rivage';
+    margin:10%;
+    margin-left: 60%;
+  }
 
-.topico {
-    float: left;
-    width: 320px;
-    margin: 5px 5px 5px 5px;
-    padding: 0%;
-}
+  .botaovolta {
+    margin-right: 18%;
+    font-size: 120px;
 
-.fundo .conteudo h2{
-    margin-top: 5%;
-    margin-left: 19%;
-} 
+  }
 
-.fundo .conteudo p {
-    font-family: 'Goudy Bookletter 1911';
-    font-size: 20px;
-}
-
+  .botaovai {
+    margin-left: 18%;
+    font-size: 120px;
+  }
+ 
+  

@@ -24,7 +24,7 @@
         <div class="header">
             <div class="container">
                 <ul class="header-usuario">
-                    <a class="header-a" href="./index.html" height="49px" ; width="49px" ;>
+                    <a class="header-a" href="../index.html" height="49px" ; width="49px" ;>
                         <img class="logo" src="../assets/icon/logo_fundo.png" alt="logo" width="45px">
                     </a>
                     <li class="header-li-bemvindo">
@@ -62,16 +62,14 @@
     <div class="fundo">
         <div class="metas">
             <div class="conteudo">
-                <div class="card card-rotina">
-
-
+                <div class="card card-caixa">
                     <h1>Minhas Metas</h1>
                     <div class="formulario">
                         <div class="campo">
                         </div>
                         <div class="div-results">
                             <div id="feed_container" class="feed-container">
-                            </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -152,9 +150,9 @@
                 if (resposta.status == 204) {
                     var feed = document.getElementById("feed_container");
                     var mensagem = document.createElement("span");
-                    mensagem.innerHTML = "Nenhum resultado encontrado."
+                    mensagem.innerHTML = "Você ainda não possui metas."
                     feed.appendChild(mensagem);
-                    throw "Nenhum resultado encontrado!!";
+                    throw "Você ainda não possui metas.";
                 }
 
                 resposta.json().then(function (resposta) {

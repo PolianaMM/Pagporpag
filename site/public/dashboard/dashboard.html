@@ -38,7 +38,7 @@
         <div class="header">
             <div class="container">
                 <ul class="header-usuario">
-                    <a class="header-a" href="./index.html" height="49px" ; width="49px" ;>
+                    <a class="header-a" href="../index.html" height="49px" ; width="49px" ;>
                         <img class="logo" src="../assets/icon/logo_fundo.png" alt="logo" width="45px">
                     </a>
                     <li class="header-li-bemvindo">
@@ -55,8 +55,13 @@
                         </a>
                     </li>
                     <li class="header-li">
+                        <a class="header-a" href="./listameta.html">
+                            Minhas Metas
+                        </a>
+                    </li>
+                    <li class="header-li">
                         <a class="header-a" href="./mural.html">
-                            Metas Atingidas
+                            Novas Metas
                         </a>
                     </li>
                     <li class="header-li">
@@ -86,48 +91,12 @@
                         <p id="avisoCaptura1" style="color: white"></p>
                     </div>
                 </div>
-
-                <!-- <div id="grafico2" class="display-none">
-                    <h3 class="tituloGraficos">
-                        <span id="tituloAquario2"></span>
-                    </h3>
-                    <div class="graph">
-                        <canvas id="myChartCanvas2"></canvas>
-                    </div>
-                    <div class="label-captura">
-                        <p id="avisoCaptura2" style="color: white"></p>
-                    </div>
-                </div> -->
-
-                <!-- <div id="grafico3" class="display-none">
-                    <h3 class="tituloGraficos">
-                        <span id="tituloAquario3"></span>
-                    </h3>
-                    <div class="graph">
-                        <canvas id="myChartCanvas3"></canvas>
-                    </div>
-                    <div class="label-captura">
-                        <p id="avisoCaptura3" style="color: white"></p>
-                    </div>
-                </div>
-
-                <div id="grafico4" class="display-none">
-                    <h3 class="tituloGraficos">
-                        <span id="tituloAquario4"></span>
-                    </h3>
-                    <div class="graph">
-                        <canvas id="myChartCanvas4"></canvas>
-                    </div>
-                    <div class="label-captura">
-                        <p id="avisoCaptura4" style="color: white"></p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
 </body>
 <script>
-    b_usuario.innerHTML = sessionStorage.NOME_USUARIO
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     let proximaAtualizacao;
 

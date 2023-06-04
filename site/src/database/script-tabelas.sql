@@ -38,11 +38,10 @@ CREATE TABLE aviso (
 	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
 );
 
-create table aquario (
-/* em nossa regra de negócio, um aquario tem apenas um sensor */
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	descricao VARCHAR(300)
-);
+select* from aviso;	
+select * from aviso where fk_usuario=1;
+select * from aviso join usuario on fkUsuario = u.id where nome=poliana;
+
  SELECT 
             a.id AS idAviso,
             a.descricao,
@@ -55,4 +54,5 @@ create table aquario (
             INNER JOIN usuario u
                 ON a.fk_usuario = u.id
         WHERE a.descricao LIKE '${texto}';
-/* esta tabela deve estar de acordo com o que está em INSERT de sua API do arduino - dat-acqu-ino */
+
+select * from aviso where fk_usuario=1;

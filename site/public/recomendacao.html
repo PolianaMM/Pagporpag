@@ -11,7 +11,7 @@
     <script src="./js/funcoes.js"></script>
 
     <link rel="icon" href="./assets/icon/favicon2.ico">
-    <link rel="stylesheet" href="./css/estilo_home.css">
+    <link rel="stylesheet" href="./css/recomendacao.css">
 </head>
 
 <body>
@@ -69,12 +69,57 @@
             </div>
         </div>
     </div>
+
     <div class="fundo">
-        <div class="conteudo">
-            <h2>Vamos conhecer mais sobre a leitura!!</h2>
-            <p>Nesse site vamos falar um pouco mais sobre esse hábito !</p>
+        <div class="alinhamento">
+            <h2>Recomendações</h2>
+            <br>
+            <div class="carousel">
+                <div class="botaovolta" onclick="tras()"> <b><</b></div>
+                <div id="carrossel"></div>
+                <div class="botaovai" onclick="frente()"> <b>></b> </div>
+            </div>
         </div>
+
     </div>
+
+
 </body>
 
 </html>
+<script>
+    var images = [
+        '<img src="./assets/imgs/ambiente.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/biblioteca.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/corrente.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/mmisery.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/monica.png" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/sofia.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/sherlock.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/psicanalise.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/paciente.jpg" alt="Carousel Image" width="350px">',
+        '<img src="./assets/imgs/vilao.jpg" alt="Carousel Image" width="350px">'
+    ];
+
+    var i = 0;
+
+
+    function tras() {
+        i--;
+        while (i < 0) {
+            i = images.length - 1;
+        }
+        carrossel.innerHTML = images[i];
+    }
+
+    function frente() {
+        i++;
+        while (i >= images.length) {
+            i = 0;
+        }
+        carrossel.innerHTML = images[i];
+    }
+
+    carrossel.innerHTML = images[i];
+
+</script>

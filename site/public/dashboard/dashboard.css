@@ -135,6 +135,7 @@ body {
     width: 130%;
     height: 300px;
     display: flex;
+    margin-right: 25%;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.06);
@@ -142,6 +143,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(7.6px);
 }
+
 
 .card-meta {
     width: 130%;
@@ -152,6 +154,20 @@ body {
     background: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(7.6px);
+}
+
+.card-caixa {
+    margin-top: 15%;
+    margin-left: 20px;
+    width: 550%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(35, 35, 35, 0.574);
+    border-radius: 10px;
+    border: 1px solid rgba(78, 77, 77, 0.11);
     backdrop-filter: blur(7.6px);
 }
 

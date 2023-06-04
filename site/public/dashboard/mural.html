@@ -24,7 +24,7 @@
         <div class="header">
             <div class="container">
                 <ul class="header-usuario">
-                    <a class="header-a" href="./index.html" height="49px" ; width="49px" ;>
+                    <a class="header-a" href="../index.html" height="49px" ; width="49px" ;>
                         <img class="logo" src="../assets/icon/logo_fundo.png" alt="logo" width="45px">
                     </a>
                     <li class="header-li-bemvindo">
@@ -70,6 +70,7 @@
                     <div class="formulario">
                         <div class="campo">
                             <form id="form_postagem" method="post" onsubmit="return publicar()">
+                                
                                 <label>
                                     (máximo de 100 caracteres):
                                     <br>
@@ -118,7 +119,7 @@
 
     function publicar() {
         var idUsuario = sessionStorage.ID_USUARIO;
-
+       
         var corpo = {
             descricao: form_postagem.descricao.value
         }

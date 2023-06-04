@@ -12,8 +12,8 @@ function listar() {
             u.email,
             u.senha
         FROM aviso a
-            INNER JOIN usuario u
-                ON a.fk_usuario = u.id;
+             JOIN usuario u
+                ON a.fk_usuario = u.id WHERE u.id=1;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
@@ -31,7 +31,7 @@ function pesquisarDescricao(texto) {
             u.email,
             u.senha
         FROM aviso a
-            INNER JOIN usuario u
+                JOIN usuario u
                 ON a.fk_usuario = u.id
         WHERE a.descricao LIKE '${texto}';
     `;
