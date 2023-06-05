@@ -145,7 +145,10 @@
 
     function atualizarFeed() {
         //aguardar();
-        fetch("/avisos/listar").then(function (resposta) {
+        var idUsuario = sessionStorage.ID_USUARIO;
+        
+        fetch(`/avisos/listar/${idUsuario}`).then(function (resposta) {
+
             if (resposta.ok) {
                 if (resposta.status == 204) {
                     var feed = document.getElementById("feed_container");

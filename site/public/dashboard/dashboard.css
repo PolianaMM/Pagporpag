@@ -151,9 +151,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(28, 28, 28, 0);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.11);
+    border: 1px solid rgba(78, 77, 77, 0.11);
     backdrop-filter: blur(7.6px);
 }
 
@@ -165,7 +165,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(35, 35, 35, 0.574);
+    background: rgba(28, 28, 28, 0);
     border-radius: 10px;
     border: 1px solid rgba(78, 77, 77, 0.11);
     backdrop-filter: blur(7.6px);
@@ -188,10 +188,10 @@ body {
 .campo input {
     width: 100%;
     height: 25px;
-    border: 2px #5a4e4e solid;
+    border: 2px #484747 solid;
     border-radius: 8px;
     padding: 0px 10px;
-    background-color: rgba(90, 86, 86, 0.34);
+    background-color: rgba(66, 66, 66, 0.34);
     color: #ffffff;
 }
 
